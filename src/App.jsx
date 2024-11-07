@@ -1,14 +1,27 @@
-//import { useState } from "react";
-//mport reactLogo from "./assets/react.svg";
-//import viteLogo from "/vite.svg";
+import { useState } from "react";
 import "./App.css";
-import Card from "./Components/Card";
+import Pinguino from "./Components/Pinguino";
+import { pinguinos } from "./pinguinos";
+import Form from "./Components/Form";
 
 function App() {
+  const [isSelected, setIsSelected] = useState({
+    tipo: null,
+    status: false,
+  });
+
   return (
-    <div className="App">
-      <h1>Carga de estudiantes</h1>
-      <Card />
+    <div>
+      {isSelected.status ? <Form tipo={isSelected.tipo} /> : null}
+      <div className="app-grid">
+        {pinguinos.map((pinguino) => (
+          <Pinguino
+            key={pinguino.id}
+            setIsSelected={setIsSelected}
+            pinguino={pinguino}
+          />
+        ))}
+      </div>
     </div>
   );
 }
