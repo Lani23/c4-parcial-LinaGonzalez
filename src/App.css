@@ -42,7 +42,7 @@
 }
 
 .pinguino-card {
-  width: 30%; /* Ajusta el tamaño para que quepan tres por fila */
+  width: 30%;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
@@ -98,7 +98,7 @@
 }
 
 .card {
-  width: 80%; /* Ajusta el tamaño para que quepan tres por fila */
+  width: 80%;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin: 8px auto;

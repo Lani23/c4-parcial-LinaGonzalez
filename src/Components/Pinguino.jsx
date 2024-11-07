@@ -1,8 +1,6 @@
 import React from "react";
 
 const Pinguino = ({ pinguino, setIsSelected }) => {
-  //   console.log(espectaculo);
-
   return (
     <div className="pinguino-card">
       <div className="pinguino-content">
